@@ -224,7 +224,7 @@ ul.list-group li:last-child {
   display: none;
 }
 
-.team-label{
+.teamlabel{
     overflow: hidden;
     font-size: 1em;
     position: absolute;
@@ -232,8 +232,24 @@ ul.list-group li:last-child {
     background: #FFF;
     color: rgb(0, 0, 0);
     margin: 8px 5px;
-    padding: 0 10px;
+    padding: 0 20px;
     transition: all .2s linear;
     text-transform: capitalize;
  
+}
+
+.payerbtnText a{
+  font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+ .payerbtnText a{
+  font-size: 10px;
+}
+.form-hero .hero-text h1{
+  font-size: 16px;
+}
+.form-hero .hero-text h2{
+  font-size: 20px;
+}
 }

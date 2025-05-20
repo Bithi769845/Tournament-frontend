@@ -92,7 +92,7 @@
     </Header>
 
     <!--Hero Section  -->
-    <div style="position: relative;z-index: -1;">
+    <div class="form-hero" style="position: relative;z-index: -1;">
         <img src="assets\images\RgForm.jpg" class="img-fluid" alt="Football Tournament"
             style="height: 300px; width: 100%; object-fit: cover;">
         <div class="hero-text">
@@ -116,280 +116,281 @@
         </div>
     </div>
 
-    <!-- Registration Form -->
+    <!--Form -->
     <div class="container">
-        <div class="position-absolute top-30 start-50 translate-middle text-center">
+        <div class="position-absolute payerbtnText d-flex gap-3 top-30 start-50 translate-middle text-center">
             <a class="btn btn-success fw-bold" id="registrationID" href="#">টিম রেজিস্ট্রেশন</a>
             <a class="btn btn-danger fw-bold" id="playerId" href="#">খেলোয়াড় রেজিস্ট্রেশন</a>
         </div>
-
-
         <div class="row d-flex justify-content-center align-items-center ">
+            <!--  Team Registration  -->
             <div class="col-12 mt-5 border p-3 rounded-4 registration-form">
-                <h4 class="text-center fw-bold text-success">টিম রেজিস্ট্রেশন</h4>
-                <form class="mt-4">
-                    <div class="row">
-                         <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">অর্গানাইজেশন</label>
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                                    <option selected>সিলেক্ট করুন</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                               <label for="captainName" class="form-label">টুর্নামেন্ট</label>
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                                    <option selected>সিলেক্ট করুন</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            
-                            <div class="mb-3">
-                                <label for="teamName" class="form-label team-label">টিমের নাম</label>
-                                <input type="text" class="form-control" id="teamName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">কোচ নাম</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ক্যাপ্টেনের নাম</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জার্সি কালার</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জোন</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">থানা</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">কন্টাক্ট </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">টীম লোগো</label>
-                                <input type="file" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+    <h4 class="text-center fw-bold text-success">টিম রেজিস্ট্রেশন</h4>
+    <form class="mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <!-- <label for="captainName" class="form-label"></label> -->
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected>অর্গানাইজেশন সিলেক্ট করুন</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
             </div>
-        </div>
-
-         <div class="col-12 mt-5 border p-3 rounded-4 player-form">
-                <h4 class="text-center fw-bold text-success">খেলোয়াড় রেজিস্ট্রেশন</h4>
-                <form class="mt-4">
-                    <div class="row">
-<div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">টিম</label>
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
-                                    <option selected>টিম সিলেক্ট করুন</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="teamName" class="form-label">নাম</label>
-                                <input type="text" class="form-control" id="teamName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">মায়ের নাম</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">বাবার নাম</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জন্ম তারিখ</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জন্মস্থান</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জাতীয়তা </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                         <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">এনআইডি নং  </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ধর্ম  </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">উচ্চতা </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ওজন </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                       
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">পেশা  </label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                     
-                         <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">বর্তমান ক্লাব</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">খেলোয়াড়ের অবস্থান</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                         <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">অ্যাওয়ার্ড</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        
-                        </div>
-                        <div class="row">
-                               <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">শিক্ষাগত যোগ্যতা  </label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">স্থায়ী ঠিকানা</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">বর্তমান ঠিকানা </label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                       <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ছবি</label>
-                                <input type="file" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জার্সি সাইজ</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">পেন্ট সাইজ</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">জার্সি নম্বর</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ফেইসবুক</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">ইমেইল</label>
-                                <input type="text" class="form-control" id="captainName" required>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="mb-3">
-                                <label for="captainName" class="form-label">যোগাযোগ</label>
-                                <input type="text" class="form-control" placeholder="+880**********" id="captainName" required>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    
-                </form>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <!-- <label for="captainName" class="form-label"></label> -->
+                    <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                        <option selected> টুর্নামেন্ট সিলেক্ট করুন</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
             </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="teamName" class="form-label teamlabel">টিমের নাম</label>
+                    <input type="text" class="form-control shadow-none forminput" id="teamName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="CoatchName" class="form-label teamlabel">কোচ নাম</label>
+                    <input type="text" class="form-control forminput" id="CoatchName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="captainName" class="form-label teamlabel">ক্যাপ্টেনের নাম</label>
+                    <input type="text" class="form-control forminput" id="captainName" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="TeamLogo" class="form-label teamlabel">টীম লোগো</label>
+                    <input type="file" class="form-control forminput" id="TeamLogo" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="JoursyColor" class="form-label teamlabel">জার্সি কালার</label>
+                    <input type="text" class="form-control forminput" id="JoursyColor" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="Zone" class="form-label teamlabel">জোন</label>
+                    <input type="text" class="form-control forminput" id="Zone" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="Thana" class="form-label teamlabel">থানা</label>
+                    <input type="text" class="form-control forminput" id="Thana" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <label for="Contact" class="form-label teamlabel">কন্টাক্ট</label>
+                    <input type="text" class="form-control forminput" id="Contact" required>
+                </div>
+            </div>
+            
         </div>
+    </form>
+</div>
+             <!--  Player Registration  -->
+        <div class="col-12 mt-5 border p-3 rounded-4 player-form">
+            <h4 class="text-center fw-bold text-success">খেলোয়াড় রেজিস্ট্রেশন</h4>
+            <form class="mt-4">
+                <div class="row">
+                    <div class=" col-md-3">
+                        <div class="mb-3">
+                            <!-- <label for="captainName" class="form-label"></label> -->
+                            <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                                <option selected>টিম সিলেক্ট করুন</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="playerName" class="form-label teamlabel">নাম</label>
+                            <input type="text" class="form-control forminput" id="playerName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="MontherName" class="form-label teamlabel">মায়ের নাম</label>
+                            <input type="text" class="form-control forminput" id="MontherName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="fatherName" class="form-label teamlabel">বাবার নাম</label>
+                            <input type="text" class="form-control forminput" id="fatherName" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="DateofBirth" class="form-label teamlabel">জন্ম তারিখ</label>
+                            <input type="text" class="form-control forminput" id="DateofBirth" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="BirthPlace" class="form-label teamlabel">জন্মস্থান</label>
+                            <input type="text" class="form-control forminput" id="BirthPlace" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="Natoionality" class="form-label teamlabel">জাতীয়তা </label>
+                            <input type="text" class="form-control forminput" id="Natoionality" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="NID" class="form-label teamlabel">এনআইডি নং </label>
+                            <input type="text" class="form-control forminput" id="NID" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="Religion" class="form-label teamlabel">ধর্ম </label>
+                            <input type="text" class="form-control forminput" id="Religion" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="height" class="form-label teamlabel">উচ্চতা </label>
+                            <input type="text" class="form-control forminput" id="height" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="weight" class="form-label teamlabel">ওজন </label>
+                            <input type="text" class="form-control forminput" id="weight" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="occupation" class="form-label teamlabel">পেশা </label>
+                            <input type="text" class="form-control forminput" id="occupation" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="PresentClub" class="form-label teamlabel">বর্তমান ক্লাব</label>
+                            <input type="text" class="form-control forminput" id="PresentClub" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="playerposition" class="form-label teamlabel">খেলোয়াড়ের অবস্থান</label>
+                            <input type="text" class="form-control forminput" id="playerposition" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="Awards" class="form-label teamlabel">অ্যাওয়ার্ড</label>
+                            <input type="text" class="form-control forminput" id="Awards" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="educationalqualification" class="form-label teamlabel">শিক্ষাগত যোগ্যতা </label>
+                            <textarea class="form-control forminput" id="educationalqualification" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="presentaddress" class="form-label teamlabel">স্থায়ী ঠিকানা</label>
+                            <textarea class="form-control forminput" id="presentaddress" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="permanenetAdderess" class="form-label teamlabel">বর্তমান ঠিকানা </label>
+                            <textarea class="form-control forminput" id="permanenetAdderess" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="picture" class="form-label teamlabel">ছবি</label>
+                            <input type="file" class="form-control forminput" id="picture" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="jourseysize" class="form-label teamlabel">জার্সি সাইজ</label>
+                            <input type="text" class="form-control forminput" id="jourseysize" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="pentsize" class="form-label teamlabel">পেন্ট সাইজ</label>
+                            <input type="text" class="form-control forminput" id="pentsize" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="jourseynumber" class="form-label teamlabel">জার্সি নম্বর</label>
+                            <input type="text" class="form-control forminput" id="jourseynumber" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="facebook" class="form-label teamlabel">ফেইসবুক</label>
+                            <input type="text" class="form-control forminput" id="facebook" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="email" class="form-label teamlabel">ইমেইল</label>
+                            <input type="text" class="form-control forminput" id="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="contact" class="form-label teamlabel">যোগাযোগ</label>
+                            <input type="text" class="form-control forminput" placeholder="+880**********" id="contact"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+        </div>
+          
     </div>
+
 
 
 

@@ -49,10 +49,16 @@ registrationBtn.addEventListener('click', function () {
 });
 
 
-const teamName = document.querySelector('#teamName');
-const teamlabel = document.querySelector('.team-label');
+ const inputFields = document.querySelectorAll('.forminput');
+    const labels = document.querySelectorAll('.teamlabel');
 
-teamName.addEventListener('click', function () {
-    teamlabel.style.margin = '0 0 300px 0'; // Top, Right, Bottom, Left margins
-});
+    inputFields.forEach((inputField, index) => {
+        inputField.addEventListener('click', function () {
+            // Apply the same design to all input fields when clicked
+            labels[index].style.margin = '-13px 0 0 20px';  // Adjust the margin
+            // Optional: Uncomment the following lines if you want to add border and border-radius as well
+            // labels[index].style.border = '1px solid green';
+            // labels[index].style.borderRadius = '5px';
+        });
+    });
 
