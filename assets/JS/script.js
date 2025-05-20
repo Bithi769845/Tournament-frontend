@@ -18,3 +18,41 @@
 
     // Set the first link as active by default
     navLinks[0].classList.add('activs');
+
+
+// Select the registration button
+const registrationBtn = document.querySelector('#registrationID');
+const registrationForm = document.querySelector('.registration-form');
+const playerBtn = document.querySelector('#playerId');
+const playerForm = document.querySelector('.player-form');
+
+// Add event listener to the button
+playerBtn.addEventListener('click', function () {
+    registrationForm.style.display = 'none';
+    playerForm.style.display = 'block';
+    playerBtn.classList.remove('btn-danger');
+    registrationBtn.style.backgroundColor = 'red';
+    registrationBtn.style.color = 'white';
+    playerBtn.style.backgroundColor = 'green';
+    playerBtn.style.color = 'white';
+});
+
+registrationBtn.addEventListener('click', function () {
+    registrationForm.style.display = 'block';
+    playerForm.style.display = 'none';
+    registrationBtn.classList.remove('btn-success');
+     playerBtn.style.backgroundColor = 'red';
+    playerBtn.style.color = 'white';
+    registrationBtn.style.backgroundColor = 'green';
+    registrationBtn.style.color = 'white';
+   
+});
+
+
+const teamName = document.querySelector('#teamName');
+const teamlabel = document.querySelector('.team-label');
+
+teamName.addEventListener('click', function () {
+    teamlabel.style.margin = '0 0 300px 0'; // Top, Right, Bottom, Left margins
+});
+
