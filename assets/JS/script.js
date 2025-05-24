@@ -62,3 +62,12 @@ registrationBtn.addEventListener('click', function () {
         });
     });
 
+
+// new section 
+    // const blogBackground = document.querySelector('.news-blog');
+    // const newsTitle = document.querySelector('.news-title');
+    // const newsText = document.querySelector('.news-text');
+
+    // blogBackground.addEventListener('mouseenter', function () {
+    //      newsTitle.style.display = 'block';
+    // });
