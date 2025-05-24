@@ -95,7 +95,10 @@
 
 /* Group Formated section */
 .formate-header {
-  background-color: rgb(74, 181, 129);
+
+  background-color:  rgb(74, 181, 129);
+
+
   color: white;
   border-radius: 2rem 0;
   font-size: 34px;
@@ -110,7 +113,9 @@
 }
 
 .group {
-  background-color: rgb(74, 181, 129);
+
+   background-color: rgb(74, 181, 129);
+
   border-radius: 2.5rem 0 2.5rem 0;
 }
 
@@ -120,7 +125,9 @@
 }
 
 .group-2 .group-header {
-  background-color: #F93827;
+
+   background-color: #F93827;
+
   width: 50%;
   border-radius: 0 0 1rem 0;
   color: white;
@@ -129,7 +136,9 @@
 }
 
 .group .group-header {
-  background-color: #F93827;
+
+   background-color: #F93827;
+
   width: 50%;
   border-radius: 0 0 0 1rem;
   color: white;
@@ -150,6 +159,7 @@ ul.list-group li:last-child {
   margin-bottom: 0;
   border-radius: 0 0 2rem 0;
   padding: 10px;
+  border-bottom: 3px solid rgb(74, 181, 129);
 }
 
 .group-2 ul.list-group li:last-child {
@@ -175,8 +185,10 @@ ul.list-group li:last-child {
 
 /* Flag Container Styling */
 .flag {
-  display: flex;    
-  background-color: rgb(74, 181, 129);     
+
+  background-color: rgb(36, 141, 94);
+  display: flex;         
+
   justify-content: space-between;
   align-items: stretch;   
   clip-path: polygon(3% 100%, 0% 0%, 100% 0%, 95% 100%);
