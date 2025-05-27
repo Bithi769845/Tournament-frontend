@@ -272,9 +272,12 @@ ul.list-group li:last-child {
 
 }
 
- 
+/* current turnament */
+ .crturnamentcard{
+   background:  rgb(8, 144, 79);
+ }
 
-
+/* News section */
 .news-title {
   transition: transform 0.5s ease, opacity 0.5s ease;
   transform: translateY(50px);
@@ -359,6 +362,7 @@ ul.list-group li:last-child {
 
 .news-blog{
   margin-left: 120px;
+  background: rgb(8, 144, 79);
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -402,3 +406,69 @@ ul.list-group li:last-child {
   transform: translateY(-50%) scale(1); 
 }
 }
+
+
+
+
+
+/* Image gallery */
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.295);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+.position-relative:hover .hover-overlay {
+    opacity: 1;
+}
+
+
+/* footer section */
+  .footer-blend {
+    background: linear-gradient(135deg, rgb(8, 144, 79), rgb(39, 179, 111), #01583e);
+    color: white;
+  }
+
+  .footer-blend a {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+
+  .footer-blend a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .footer-blend .footer-logo {
+    border: 3px solid rgb(1, 131, 59);
+    border-radius: 50%;
+    width: 60px;
+    
+  }
+
+  .footer-blend h5 {
+    font-weight: bold;
+  }
+
+  .footer-bottom {
+    background-color: rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: white;
+  }
+
+  .social-icons a:hover {
+    color: #ddd;
+  }

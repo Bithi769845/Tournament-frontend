@@ -1,73 +1,84 @@
-  // Select all nav-link elements
+document.addEventListener("DOMContentLoaded", function () {
+    // Handle nav-link active state
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Function to remove 'active' class from all menu items
     function removeActiveClass() {
         navLinks.forEach(link => {
             link.classList.remove('activs');
         });
     }
 
-    // Loop through each nav-link and add event listeners
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
-            removeActiveClass();  // Remove 'active' from all links
-            link.classList.add('activs');  // Add 'active' to clicked link
+            removeActiveClass();
+            link.classList.add('activs');
         });
     });
 
-    // Set the first link as active by default
-    navLinks[0].classList.add('activs');
+    if (navLinks.length > 0) {
+        navLinks[0].classList.add('activs');
+    }
 
+    // Toggle between registration and player form
+    const registrationBtn = document.querySelector('#registrationID');
+    const registrationForm = document.querySelector('.registration-form');
+    const playerBtn = document.querySelector('#playerId');
+    const playerForm = document.querySelector('.player-form');
 
-// Select the registration button
-const registrationBtn = document.querySelector('#registrationID');
-const registrationForm = document.querySelector('.registration-form');
-const playerBtn = document.querySelector('#playerId');
-const playerForm = document.querySelector('.player-form');
+    if (registrationBtn && playerBtn && registrationForm && playerForm) {
+        playerBtn.addEventListener('click', function () {
+            registrationForm.style.display = 'none';
+            playerForm.style.display = 'block';
+            playerBtn.classList.remove('btn-danger');
+            registrationBtn.style.backgroundColor = 'red';
+            registrationBtn.style.color = 'white';
+            playerBtn.style.backgroundColor = 'green';
+            playerBtn.style.color = 'white';
+        });
 
-// Add event listener to the button
-playerBtn.addEventListener('click', function () {
-    registrationForm.style.display = 'none';
-    playerForm.style.display = 'block';
-    playerBtn.classList.remove('btn-danger');
-    registrationBtn.style.backgroundColor = 'red';
-    registrationBtn.style.color = 'white';
-    playerBtn.style.backgroundColor = 'green';
-    playerBtn.style.color = 'white';
-});
+        registrationBtn.addEventListener('click', function () {
+            registrationForm.style.display = 'block';
+            playerForm.style.display = 'none';
+            registrationBtn.classList.remove('btn-success');
+            playerBtn.style.backgroundColor = 'red';
+            playerBtn.style.color = 'white';
+            registrationBtn.style.backgroundColor = 'green';
+            registrationBtn.style.color = 'white';
+        });
+    }
 
-registrationBtn.addEventListener('click', function () {
-    registrationForm.style.display = 'block';
-    playerForm.style.display = 'none';
-    registrationBtn.classList.remove('btn-success');
-     playerBtn.style.backgroundColor = 'red';
-    playerBtn.style.color = 'white';
-    registrationBtn.style.backgroundColor = 'green';
-    registrationBtn.style.color = 'white';
-   
-});
-
-
- const inputFields = document.querySelectorAll('.forminput');
+    // Form label styling on input focus
+    const inputFields = document.querySelectorAll('.forminput');
     const labels = document.querySelectorAll('.teamlabel');
 
     inputFields.forEach((inputField, index) => {
         inputField.addEventListener('click', function () {
-            // Apply the same design to all input fields when clicked
-            labels[index].style.margin = '-13px 0 0 20px';  // Adjust the margin
-            // Optional: Uncomment the following lines if you want to add border and border-radius as well
-            // labels[index].style.border = '1px solid green';
-            // labels[index].style.borderRadius = '5px';
+            if (labels[index]) {
+                labels[index].style.margin = '-13px 0 0 20px';
+                // Uncomment if you want to style the label border
+                // labels[index].style.border = '1px solid green';
+                // labels[index].style.borderRadius = '5px';
+            }
         });
     });
 
+    // Gallery image rotation and zoom
+    let rotation = 0, zoomLevel = 1;
 
-// new section 
-    // const blogBackground = document.querySelector('.news-blog');
-    // const newsTitle = document.querySelector('.news-title');
-    // const newsText = document.querySelector('.news-text');
+    window.rotateImage = function (degrees) {
+        rotation += degrees;
+        updateTransform();
+    }
 
-    // blogBackground.addEventListener('mouseenter', function () {
-    //      newsTitle.style.display = 'block';
-    // });
+    window.zoomImage = function (amount) {
+        zoomLevel = Math.max(1, zoomLevel + amount);
+        updateTransform();
+    }
+
+    function updateTransform() {
+        const carouselItems = document.querySelectorAll('.carousel-item img');
+        carouselItems.forEach(item => {
+            item.style.transform = `rotate(${rotation}deg) scale(${zoomLevel})`;
+        });
+    }
+});
